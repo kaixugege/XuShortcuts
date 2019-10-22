@@ -4,7 +4,6 @@ import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
 import android.graphics.drawable.Icon
-import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
             var intentThree = Intent(this,ThreeActivity::class.java)
             intentThree.setAction(Intent.ACTION_VIEW);
             var intentArray = arrayOf(intentThree,intent)
-
 
             var shortcutManager = getSystemService(ShortcutManager::class.java)
             var shortcut = ShortcutInfo.Builder(this, "xugege")
